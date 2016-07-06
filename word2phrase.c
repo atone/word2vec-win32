@@ -20,7 +20,7 @@
 #define MAX_STRING 60
 
 // 500000000 will cause a malloc failure
-const int vocab_hash_size = 100000000; // Maximum 500M entries in the vocabulary
+const int vocab_hash_size = 500000000; // Maximum 500M entries in the vocabulary
 
 typedef float real;                    // Precision of float numbers
 
@@ -109,7 +109,7 @@ int AddWordToVocab(char *word) {
 
 // Used later for sorting by word counts
 int VocabCompare(const void *a, const void *b) {
-  return ((struct vocab_word *)b)->cn - ((struct vocab_word *)a)->cn;
+    return ((struct vocab_word *)b)->cn - ((struct vocab_word *)a)->cn;
 }
 
 // Sorts the vocabulary by frequency using word counts
