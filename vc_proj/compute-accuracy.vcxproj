@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\word-analogy.c" />
+    <ClCompile Include="..\compute-accuracy.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{78698725-BA8A-410B-9971-2BF28562B2D1}</ProjectGuid>
